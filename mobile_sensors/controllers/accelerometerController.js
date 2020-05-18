@@ -4,11 +4,4 @@ module.exports = function(app) {
         res.render('index');
     });
 
-    /*
-    app.post('/', function(req,res) {
-
-        accelerometer data to elaborate / send to ThingsBoard
-
-    });
-    */
 }
