@@ -14,7 +14,7 @@ $(document).ready(() => {
         if ("Accelerometer" in window) {
 
             // Create a new Accelerometer object
-            let sensor = new Accelerometer({frequency: 1});
+            let sensor = new Accelerometer({frequency: 2});
 
             // Start the sensor reading
             sensor.start();
@@ -29,7 +29,7 @@ $(document).ready(() => {
                 console.log("x coordinate: " + sensor.x + "\ny coordinate: " + sensor.y + "\nz coordinate:  " + sensor.z);
 
                 // Preapare data to be sent to the Node JS backend
-                let telemetry = { x: x_coordinate, y: y_coordinate, z: z_coordinate};
+                let telemetry = { x: sensor.x, y: sensor.y, z: sensor.z };
 
                 // POST data to the backend
                 fetch("/", {
