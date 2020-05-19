@@ -1,13 +1,14 @@
 // This is the script that is executed by the browser and that will read the measurements made by
 // the accelerometer and that will send them to ThingsBoard
 
-// Prepare the variables to store the values
-let x_coordinate = document.getElementById("x_coordinate");
-let y_coordinate = document.getElementById("y_coordinate");
-let z_coordinate = document.getElementById("z_coordinate");
-
 $(document).ready(() => {
     try {
+
+        // Prepare the variables to store the values
+        let x_coordinate = document.getElementById("x_coordinate");
+        let y_coordinate = document.getElementById("y_coordinate");
+        let z_coordinate = document.getElementById("z_coordinate");
+
         if ("Accelerometer" in window) {
 
             let sensor = new Accelerometer({frequency: 1});
