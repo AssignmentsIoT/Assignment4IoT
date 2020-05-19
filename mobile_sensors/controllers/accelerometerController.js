@@ -8,7 +8,7 @@ module.exports = function(app) {
     });
 
     app.post('/', function(req, res) {
-        var data = JSON.stringify(req.body);
+        var data = JSON.parse(req.body);
         console.log("POST received. Data: " + data);
     })
 
