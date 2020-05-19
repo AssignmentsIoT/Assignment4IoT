@@ -5,15 +5,15 @@ var app = express();
 
 const PORT = process.env.PORT || 3000
 
-// set up template engine 
+// Set up template engine 
 app.set('view engine', 'ejs');
 
-// static files
+// Set up middleware to render static files
 app.use(express.static('./assets'));
 
-//fire controller
+//Start controller
 accelerometerController(app);
 
-//listen to port
+//Listen to port
 app.listen(PORT);
 console.log(`You are listening to port ${PORT}`);
