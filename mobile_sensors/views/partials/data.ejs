@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!-- A very simple html page -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+        <link href="/styles.css" rel="stylesheet" type="text/css" />
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="/sensor.js" type="text/javascript" charset="utf-8"></script>
+        <title>Accelerometer Listener </title>
+
+        <nav>
+            <h2>Accelerometer Listener</h2>
+        </nav>
+    </head>
+
+    <div>
+        <h3>This application captures the values measured by the accelerometer of your phone.</h3>
+
+        <span id="frequency">Frequency: 1 Hz</span>
+        
+        <br><br>
+
+        <span id="error_message"></span>
+        
+        <br><br>
+
+        <span>X coordinate: </span>
+        <span id="x_coordinate">x coordinate</span>
+        <br><br>
+
+        <span>Y coordinate: </span>
+        <span id="y_coordinate">y coordinate</span>
+        <br><br>
+
+        <span>Z coordinate:</span>
+        <span id="z_coordinate">z coordinate</span>
+        <br><br>
+    </div>
