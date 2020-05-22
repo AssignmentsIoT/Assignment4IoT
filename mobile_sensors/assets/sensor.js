@@ -14,7 +14,7 @@ $(document).ready(() => {
         if ("Accelerometer" in window) {
 
             // Create a new Accelerometer object
-            let sensor = new Accelerometer({frequency: 2});
+            let sensor = new Accelerometer({frequency: 1});
 
             // Start the sensor reading
             sensor.start();
