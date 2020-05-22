@@ -29,7 +29,7 @@ $(document).ready(() => {
                 console.log("x coordinate: " + sensor.x + "\ny coordinate: " + sensor.y + "\nz coordinate:  " + sensor.z);
 
                 // Preapare data to be sent to the Node JS backend
-                let telemetry = { x: sensor.x, y: sensor.y, z: sensor.z };
+                let telemetry = { x: sensor.x, y: sensor.y, z: sensor.z, module: "undefined", activity: "undefined" };
 
                 // POST data to the backend
                 fetch("/", {
