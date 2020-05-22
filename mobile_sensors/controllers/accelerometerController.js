@@ -27,6 +27,8 @@ module.exports = function(app) {
     app.post('/', function(req, res) {
         var data = JSON.stringify(req.body);
         console.log("POST received. Data: " + data);
+        thingsboardClient.publish('v1/devices/me/telemetry', data);
+        console.log("Data published on ThingsBoard");
     })
 
 }
