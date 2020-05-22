@@ -1,5 +1,7 @@
 // This is the accelerometer controller. It also manages the HTTP requests.
 
+var thingsboardClient = require("./../app");
+
 // Manage HTTP request to the app
 module.exports = function(app) {
     

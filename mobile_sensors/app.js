@@ -43,4 +43,4 @@ accelerometerController(app);
 app.listen(PORT);
 console.log(`You are listening to port ${PORT}`);
 
-//module.exports = thingsboardClient;
+module.exports = thingsboardClient;
