@@ -41,8 +41,12 @@ module.exports = function(app) {
         console.log("Data published on ThingsBoard");
     })
 
+    app.get('/dashboard', function(req, res) {
+        res.render('dashboard');
+    })
+    
     app.get('/edge', function(req, res) {
-        // Render the cloud dashboard
+        // Render the edge page
         res.render('edge');
     });
 
