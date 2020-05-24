@@ -4,14 +4,25 @@
 
     <%- include ('partials/data.ejs') %>
 
+    <script src="/edge_sensor.js" type="text/javascript" charset="utf-8"></script>
+
     <div>
         <button>
             <a href="/">Cloud</a>
         </button>
 
         <button>
-            <a href="">Dashboard</a>
+            <a href="">Latest activities</a>
         </button>
-
     </div>
+
+    <div>
+        <h3>User activity</h3>
+
+        <div id="activity" class="rectangle"></div>
+    </div>
+
+    <br>
+    <br>
+
 </html>

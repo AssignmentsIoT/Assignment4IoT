@@ -1,5 +1,5 @@
 // This is the script that is executed by the browser and that will read the measurements made by
-// the accelerometer and that will send them to ThingsBoard
+// the accelerometer 
 
 // Wait until the browser is ready (everything loaded)
 $(document).ready(() => {

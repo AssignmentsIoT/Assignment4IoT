@@ -31,23 +31,29 @@ module.exports = function(app) {
 
     // Manage POST request
     app.post('/', function(req, res) {
-
-        // Collect data
-        var data = JSON.stringify(req.body);
-        console.log("POST received. Data: " + data);
-
-        // Publish data on ThingsBoard topic (data arrives to the device we connected to, the accelerometer)
-        thingsboardClient.publish('v1/devices/me/telemetry', data);
-        console.log("Data published on ThingsBoard");
+        // Send data to ThingsBoard to process at cloud level
+        sendData(req.body, "Cloud");
     })
 
-    app.get('/dashboard', function(req, res) {
-        res.render('dashboard');
-    })
-    
     app.get('/edge', function(req, res) {
         // Render the edge page
         res.render('edge');
     });
+
+    app.post('/edge', function(req, res) {
+        // Send data already processed to ThingsBoard
+        sendData(req.body, "Edge");
+    });
+
+    function sendData(body, level) {
+
+        // Collect data
+        var data = JSON.stringify(body);
+        console.log("[" + level + "]: POST received. Data: " + data);
+
+        // Publish data on ThingsBoard topic (data arrives to the device we connected to, the accelerometer)
+        thingsboardClient.publish('v1/devices/me/telemetry', data);
+        console.log("[" + level +"]: Data published on ThingsBoard");
+    }
 
 }
