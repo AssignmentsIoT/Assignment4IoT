@@ -34,13 +34,13 @@ $(document).ready(() => {
                 let activity = "undefined";
 
                 // Compute the module of the vector
-                /*let module = Math.sqrt((msg.x * msg.x) + (msg.y * msg.y) + (msg.z * msg.z));
+                let module = Math.sqrt((msg.x * msg.x) + (msg.y * msg.y) + (msg.z * msg.z));
                 
                 // Take into account gravitational acceleration
                 let normalizedModule = Math.abs(module - 9.81);
                 
                 //Activity recognition
-                if (normalizedModule > 2) {
+                /*if (normalizedModule > 2) {
                     activity = "Running";
                 }
                 else if (normalizedModule > 0.5) {
@@ -50,13 +50,13 @@ $(document).ready(() => {
                     activity = "Standing still";
                 }*/
 
-                activity_label.innerHTML = activity;
+                activity_label.innerHTML = normalizedModule;
 
                 // Preapare data to be sent to the Node JS backend
                 let telemetry = { x: sensor.x, y: sensor.y, z: sensor.z, module: module, activity: activity };
 
                 // POST data to the backend
-                fetch("/", {
+                fetch("/edge", {
                     method: "POST",
                     headers: {
                       "Content-Type": "application/json",
