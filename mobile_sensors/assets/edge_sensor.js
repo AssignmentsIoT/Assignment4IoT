@@ -34,13 +34,13 @@ $(document).ready(() => {
                 let activity = "undefined";
 
                 // Compute the module of the vector
-                let module = Math.sqrt((msg.x * msg.x) + (msg.y * msg.y) + (msg.z * msg.z));
+                let module = Math.sqrt((sensor.x * sensor.x) + (sensor.y * sensor.y) + (sensor.z * sensor.z));
                 
                 // Take into account gravitational acceleration
-                //let normalizedModule = Math.abs(module - 9.81);
+                let normalizedModule = Math.abs(module - 9.81);
                 
                 //Activity recognition
-                /*if (normalizedModule > 2) {
+                if (normalizedModule > 2) {
                     activity = "Running";
                 }
                 else if (normalizedModule > 0.5) {
@@ -48,7 +48,7 @@ $(document).ready(() => {
                 }
                 else {
                     activity = "Standing still";
-                }*/
+                }
 
                 activity_label.innerHTML = module;
 
