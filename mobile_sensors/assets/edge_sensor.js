@@ -34,7 +34,7 @@ $(document).ready(() => {
                 let activity = "undefined";
 
                 // Compute the module of the vector
-                let module = Math.sqrt((msg.x * msg.x) + (msg.y * msg.y) + (msg.z * msg.z));
+                /*let module = Math.sqrt((msg.x * msg.x) + (msg.y * msg.y) + (msg.z * msg.z));
                 
                 // Take into account gravitational acceleration
                 let normalizedModule = Math.abs(module - 9.81);
@@ -48,7 +48,7 @@ $(document).ready(() => {
                 }
                 else {
                     activity = "Standing still";
-                }
+                }*/
 
                 activity_label.innerHTML = activity;
 
