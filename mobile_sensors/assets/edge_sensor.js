@@ -56,7 +56,7 @@ $(document).ready(() => {
                 let telemetry = { x: sensor.x, y: sensor.y, z: sensor.z, module: module, activity: activity };
 
                 // POST data to the backend
-                fetch("/", {
+                fetch("/edge", {
                     method: "POST",
                     headers: {
                       "Content-Type": "application/json",
