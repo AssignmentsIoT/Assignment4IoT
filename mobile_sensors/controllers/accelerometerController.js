@@ -33,7 +33,7 @@ module.exports = function(app) {
     app.post('/', function(req, res) {
         // Send data to ThingsBoard to process at cloud level
         sendData(req.body, "Cloud");
-    })
+    });
 
     app.get('/edge', function(req, res) {
         // Render the edge page

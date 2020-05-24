@@ -37,7 +37,7 @@ $(document).ready(() => {
                 let module = Math.sqrt((msg.x * msg.x) + (msg.y * msg.y) + (msg.z * msg.z));
                 
                 // Take into account gravitational acceleration
-                let normalizedModule = Math.abs(module - 9.81);
+                //let normalizedModule = Math.abs(module - 9.81);
                 
                 //Activity recognition
                 /*if (normalizedModule > 2) {
@@ -50,7 +50,7 @@ $(document).ready(() => {
                     activity = "Standing still";
                 }*/
 
-                activity_label.innerHTML = normalizedModule;
+                activity_label.innerHTML = module;
 
                 // Preapare data to be sent to the Node JS backend
                 let telemetry = { x: sensor.x, y: sensor.y, z: sensor.z, module: module, activity: activity };
