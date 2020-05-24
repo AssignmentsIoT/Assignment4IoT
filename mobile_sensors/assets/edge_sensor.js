@@ -50,7 +50,7 @@ $(document).ready(() => {
                     activity = "Standing still";
                 }
 
-                activity_label.innerHTML = module;
+                activity_label.innerHTML = activity;
 
                 // Preapare data to be sent to the Node JS backend
                 let telemetry = { x: sensor.x, y: sensor.y, z: sensor.z, module: module, activity: activity };
