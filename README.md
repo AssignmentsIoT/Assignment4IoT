@@ -50,10 +50,16 @@ First of all, you need an Android phone with Chrome browser. In the search bar, 
 Since the application is deployed on Heroku, you just need to connect to this link: https://salty-wave-30591.herokuapp.com/ and see the magic happen!<br>
 
 ### More information
-If you want to know how to build an application like this, just have a look at this tutorial I've made on Hackster.io: LINK TUTORIAL.<br>
+If you want to know how to build an application like this, just have a look at this tutorial I've made on Hackster.io: https://www.hackster.io/silvia-del-piano/activity-detection-and-a-phone-s-accelerometer-4bf00e .<br>
 There's also a video on Youtube to show the application running and the main technologies involved: YOUTUBE_LINK.<br>
 Finally, for further information, have a look also the power point in this repository.<br>
 I hope these series of tutorials has been fun and useful!<br>
+<br>
+P.S. If you need anything in particular, feel free to contact me on LinkedIn: https://www.linkedin.com/in/silvia-del-piano-2482391a6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEdqyH9ACQj%2BSUgI39I%2FM1g%3D%3D .<br>
+To see more of my work, have a look at the other assignments:
+- Assignment1_IoT: https://github.com/AssignmentsIoT/Assignment1_IoT.git
+- Assignment2_IoT: https://github.com/AssignmentsIoT/Assignment2_IoT.git
+- Assignment3_IoT: https://github.com/AssignmentsIoT/Assignment3_IoT.git 
 
 ### Further references
 Here's a list of useful links:<br>
