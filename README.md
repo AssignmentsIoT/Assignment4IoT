@@ -8,6 +8,8 @@ We want to build a simple crowdsensing application that collects the data read b
 ## Implementation
 The crowdsensing application is a simple Nodejs application deployed on Heroku. The data is collected from the accelerometer with a simple HTML page and some JavaScript rendered by the browser Google Chrome. The code relative to this part is in the */views* folder and in the *.js* files in the */assets* folder into */crowdsensing_app*. There is also a little */assets/styles.css* for basic styling. The activity recognition section in the */assets/edge_sensor.js* file is easily recognizable.<br>
 In the file */controllers/accelerometerController.js* HTTP requests are managed, in particular in the POST methods the data is collected from the front-end and send to the cloud platform.<br>
+In the cloud** section, you can visualiza the ThingsBoard dashboard thanks to a link, to see all the latest values detected by the sensors, even all the ones collected in an hour.<br>
+In the **edge** section, you'll be able to see the activity you're doing in real time on the page, but you can also access a dashboard where you can see all the activities detected during the last hour.<br>
 We use ThingsBoard as cloud platform, where the activity recongnition is performed, thanks to a rule chain, by this code:<br>
 ```
 // If activity recognition was not performed at edge level, it's done now at cloud level
@@ -40,8 +42,6 @@ function activity_recognition(msg) {
 }
 ```
 <br>
-In the **cloud** section, you can visualiza the ThingsBoard dashboard thanks to a link, to see all the latest values detected by the sensors, even all the ones collected in an hour.<br>
-In the **edge** section, you'll be able to see the activity you're doing in real time on the page, but you can also access a dashboard where you can see all the activities detected during the last hour.<br>
 
 ### Run the application
 #### Prepare the phone
