@@ -5,6 +5,7 @@ var accelerometerController = require('./controllers/accelerometerController');
 
 var app = express();
 
+// The port is the one assigned by Heroku or 3000 
 const PORT = process.env.PORT || 3000 
 
 // Set up template engine 

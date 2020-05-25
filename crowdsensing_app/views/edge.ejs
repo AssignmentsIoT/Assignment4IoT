@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 
+<!-- A very simple html page -->
+
 <html>
 
+    <!-- Include the partial view common to both edge and cloud deployment -->
     <%- include ('partials/data.ejs') %>
 
+    <!-- Load the cloud JavaScript file -->
     <script src="/edge_sensor.js" type="text/javascript" charset="utf-8"></script>
 
     <div>
+
+        <!-- Button to get the cloud page -->
         <button>
             <a href="/">Cloud</a>
         </button>
 
+        <!-- Button to get the dashboard with the latest activities detected -->
         <button>
             <a href="http://demo.thingsboard.io:/dashboard/e1898830-9dc0-11ea-8119-a1c39468fcf6?publicId=dfa0b6f0-6c1b-11ea-ad02-b3576b7d39f1">Latest activities</a>
         </button>
     </div>
 
+    <!-- Show the activity the user is doing in real time -->
     <div>
         <h3>User activity</h3>
 

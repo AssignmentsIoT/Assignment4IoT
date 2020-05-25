@@ -7,13 +7,17 @@
     <!-- Include the partial view common to both edge and cloud deployment -->
     <%- include ('partials/data.ejs') %>
 
+    <!-- Load the cloud JavaScript file -->
     <script src="/cloud_sensor.js" type="text/javascript" charset="utf-8"></script>
 
     <div>
+
+        <!-- Button to get the edge page -->
         <button>
             <a href="/edge">Edge</a>
         </button>
 
+        <!-- Button to get the dashboard with all the sensors -->
         <button>
             <a href="http://demo.thingsboard.io:/dashboard/8f004420-6dbc-11ea-8e0a-7d0ef2a682d3?publicId=dfa0b6f0-6c1b-11ea-ad02-b3576b7d39f1">Dashboard</a>
         </button>
