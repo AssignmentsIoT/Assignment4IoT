@@ -51,7 +51,7 @@ Since the application is deployed on Heroku, you just need to connect to this li
 
 ### More information
 If you want to know how to build an application like this, just have a look at this tutorial I've made on Hackster.io: https://www.hackster.io/silvia-del-piano/activity-detection-and-a-phone-s-accelerometer-4bf00e .<br>
-There's also a video on Youtube to show the application running and the main technologies involved: YOUTUBE_LINK.<br>
+There's also a video on Youtube to show the application running and the main technologies involved: https://youtu.be/o0Nvcbd7rkc.<br>
 Finally, for further information, have a look also the power point in this repository.<br>
 I hope these series of tutorials has been fun and useful!<br>
 <br>
