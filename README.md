@@ -3,7 +3,7 @@
 This assignment was done as part of the course of Internet of Things of Master Degree in Computer Engineering at Sapienza University of Rome.<br>
 
 ## Main idea
-We want to build a simple crowdsensing application that collects the data read by the accelerometer sensor on a smartphone and does some activity recognition with it. In particular, we want to be able to tell if the user is running, is walking or id he's standing still. We'll consider two variants: the activity recognition is perfomed at the **cloud level** by the cloud platform, or the activity recognition is done at **edge level**, which means it is done locally on the phone, and only after that the data is sent on the cloud.<br>
+We want to build a simple crowdsensing application that collects the data read by the accelerometer sensor on a smartphone and does some activity recognition with it. In particular, we want to be able to tell if the user is running, is walking or id he's standing still. We'll consider two variants: the activity recognition is performed at **cloud level** by the cloud platform, or the activity recognition is done at **edge level**, which means it is done locally on the phone, and only after that the data is sent on the cloud.<br>
 
 ## Implementation
 The crowdsensing application is a simple Nodejs application deployed on Heroku. The data is collected from the accelerometer with a simple HTML page and some JavaScript rendered by the browser Google Chrome. The code relative to this part is in the */views* folder and in the *.js* files in the */assets* folder into */crowdsensing_app*. There is also a little */assets/styles.css* for basic styling. The activity recognition section in the */assets/edge_sensor.js* file is easily recognizable.<br>
@@ -53,7 +53,7 @@ Since the application is deployed on Heroku, you just need to connect to this li
 If you want to know how to build an application like this, just have a look at this tutorial I've made on Hackster.io: LINK TUTORIAL.<br>
 There's also a video on Youtube to show the application running and the main technologies involved: YOUTUBE_LINK.<br>
 Finally, for further information, have a look also the power point in this repository.<br>
-I hope these series of tutorial has been fun and useful!<br>
+I hope these series of tutorials has been fun and useful!<br>
 
 ### Further references
 Here's a list of useful links:<br>
